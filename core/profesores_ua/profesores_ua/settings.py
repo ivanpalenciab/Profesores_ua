@@ -1,7 +1,6 @@
 from pathlib import Path
 from decouple import config
 
-import os
 
 print()
 
@@ -34,7 +33,7 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS=[
-    
+    "profesores.apps.ProfesoresConfig"
 ]
 
 THIRD_PARTY_APPS =['rest_framework']
@@ -78,7 +77,7 @@ WSGI_APPLICATION = 'profesores_ua.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Profesores',
+        'NAME': 'UA',
         'USER': 'postgres',
         'PASSWORD': config("bd_password"),
         'HOST': 'localhost',
