@@ -33,7 +33,9 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS=[
-    "profesores.apps.ProfesoresConfig"
+    "profesores.apps.ProfesoresConfig",
+    "materias.apps.MateriasConfig",
+    "curso.apps.CursoConfig"
 ]
 
 THIRD_PARTY_APPS =['rest_framework']
